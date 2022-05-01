@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>LiveCode Answer dialogs</title>
+<body>
+    <a href="http://renatogr.cf">Home</a>
+<center>
+   
+<h1>LiveCode Answer dialogs</h1>
+<br><br>
+<h3> Opening Answer Dialog </h3>
+<p>First add a button to your stack then right click on button and click Edit script. You will see a new window and inside that window enter this code (just copy and paste)
+</center>
+<br><br><br>
+<p> on mouseup
+<p> answer "Here you can enter text that you want to display"
+<p>end mouseup 
+<br>
+<center><h3>Showing text form field in answer dialog</h3></center>
+<br> <center>Add a field and a button to your stack. There are 2 ways to do this so i am going to show you boath ways</center>
+
+<br>First way<br>
+<br>
+<p>on mouseUp
+<p>answer field "Field"
+<p>end mouseup
+<br>
+<br>Second way
+<br><br>
+<p> on mouseUp
+<p> put field "Field" into blah
+<p> answer blah
+<p> end mouseup
+
+<br><br>
+
+
+
+<p>Let's talk about command "on mouseUp"
+<p> Actually you don't have to put on mouseUp you can put on mouseDown or on mouseDoubleup and so on...
+    <p>on mouseUp will do run the code of the object after you RELEASE a mouse click
+<p>on mouseDown will do run the code of the object after you PUSH a mouse click  
+<p>on mouseDoubleup will do run the code of the object after you DOUBLE CLICK a mouse click            
+<br><br>
+Learn more about mouse commands <a href="mousecommands.html">here</a>
+
+
+
+
+
+
+
+
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+}
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Ask dialogs</title>
+<body>
+    <a href="http://renatogr.cf">Home</a>
+<center>
+   
+<h3>Summoning ask dialog</h3>
+<br>
+Add a button to your stack and enter script of button.
+</center>
+<br><br>
+<p> on mouseUp
+<p> ask "And here you enter your question"
+<p> end mouseUp
+
+<br><br><br>
+<a href="files/Summoning_ask_dialog.livecode">Download</a>
+
+<br><br>
+<center><h3>Putting answer from ask dialog into field</h3>
+<br>
+Add a field and a button to your stack and enter script editor for button
+
+    </center>
+<br><br>
+<p> on mouseUp
+<p> ask "Enter your age"
+<p> put it into field "Field"
+<p> end mouseUp
+
+<br><br><br>
+<a href="files/Putting_data_from_ask_into_field.livecode">Download</a>
+<br><br><br>
+<center><h3>Checking what is entered in ask field</h3>
+<br>
+Add a field and a button to your stack and enter script editor for button
+
+    </center>
+<br><br>
+Checking if number is entered into ask field and answering that number
+<br><br>
+<p> on mouseUp
+<p> ask "Enter a number"
+<p> put it into numbers
+<p> if numbers is a number
+<P> then
+<p> answer "You entered "&numbers& " !!!"
+<p> else
+<p> answer "I said to enter a number! Not text!"
+<p> end if
+<p> end mouseUp    
+    
+    <br><br><br>
+
+<a href="files/Checking_whats_in_ask_field.livecode">Download</a>
+    
+<center><h3>Asking text from field (there are 2 ways and i will write boath down there)</h3>
+<br>
+Add a field and a button to your stack and enter script editor for button
+
+    </center>
+<br>
+<h5>First way</h5><br>
+<p> on mouseUp
+<p> ask field "Field"
+<p> end mouseUp
+        <br><br><br>
+
+<a href="files/Asking_text_from_field.livecode">Download</a>
+
+<br><br>
+<h5>Second way</h5>
+<br>
+<p> on mouseUp
+<p> put field "Field" into question
+<p> ask question
+<p> end mouseUp
+
+        <br><br><br>
+<center><h3>Looking what is entered in ask field and answering with something</h3>
+<br>
+I will now show you how to make very simple and easy quizz 
+
+    </center>
+<br>
+<p> on mouseUp
+<p> ask "What's the best website on earth?"
+<p> put it into qanswer
+<p> if qanswer = "renatogr.cf" // here enter right answer insted of renatogr.cf
+<p> then
+<p> answer "Correct!"
+<p> else
+<p> answer "Wrong!"
+<p> end if
+<p> end mouseUp
+
+            <br><br><br>
+
+<a href="files/Looking_what_is_entered_in_ask_field_and_answering_with_something.livecode">Download</a>
+    
+    
+    
+    <style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+}
+</style>
+
+
+</body>
+</html>
